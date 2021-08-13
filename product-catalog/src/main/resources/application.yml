@@ -1,0 +1,27 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  health:
+    db:
+      enabled: true
+
+spring:
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+
+  data:
+    elasticsearch:
+      properties:
+        path:
+          home: /home/william/Documentos/Estudos/Elasticsearch
+        transport:
+          tcp:
+            connect_timeout: 120s
+
+elasticsearch:
+  host: localhost
+  port: 9200
+  username:
+  password:
