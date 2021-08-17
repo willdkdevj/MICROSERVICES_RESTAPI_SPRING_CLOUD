@@ -23,8 +23,6 @@ import java.util.Map;
  *
  */
 
-//@EnableElasticsearchRepositories(basePackages = "br.com.supernova.productcatalog.repository")
-//@ComponentScan(basePackages = { "br.com.supernova.productcatalog" })
 @Configuration
 public class ElasticsearchClientConfig extends AbstractElasticsearchConfiguration {
 
@@ -42,38 +40,5 @@ public class ElasticsearchClientConfig extends AbstractElasticsearchConfiguratio
                 .create(clientConfiguration)
                 .rest();
     }
-
-    //@Bean
-    //@Override
-    //public ElasticsearchCustomConversions elasticsearchCustomConversions() {
-//        return new ElasticsearchCustomConversions(
-  //              Arrays.asList(new AddressToMap(), new MapToAddress()));
-    //}
-
-    //@WritingConverter
-    //static class AddressToMap implements Converter<Product, Map<String, Object>> {
-
-      //  @Override
-        //public Map<String, Object> convert(Product source) {
-          //  LinkedHashMap<String, Object> target = new LinkedHashMap<>();
-          //  target.put("name", source.getName());
-            //target.put("amount", source.getAmount());
-
-            //return target;
-        //}
-    //}
-
-    //@ReadingConverter
-    //static class MapToAddress implements Converter<Map<String, Object>, Product> {
-
-//        @Override
-  //      public Product convert(Map<String, Object> source) {
-    //        Product product = new Product();
-      //      product.setName(source.get("name").toString());
-        //    product.setName(source.get("amount").toString());
-
-          //  return product;
-        //}
-    //}
 
 }

@@ -7,11 +7,6 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
-
-//@Data
-//@Builder
-//@AllArgsConstructor
-//@NoArgsConstructor
 @Getter
 @Setter
 @Document(indexName = "product")
